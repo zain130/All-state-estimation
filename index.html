@@ -10,7 +10,6 @@
 <meta property="og:description" content="Discover how BIM-based cost estimating helps contractors, subcontractors, and developers cut waste, prevent costly errors, and protect profit margins.">
 <meta property="og:type" content="article">
 
-<!-- Schema Markup -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -75,6 +74,8 @@
     font-size: 16px;
     color: var(--white);
     letter-spacing: 0.02em;
+    text-decoration: none;
+    border: none;
   }
   .top-bar-brand span { color: var(--accent); }
   .top-bar-nav a {
@@ -159,10 +160,7 @@
     margin-bottom: 24px;
     letter-spacing: -0.01em;
   }
-  .hero h1 em {
-    color: var(--accent);
-    font-style: italic;
-  }
+  .hero h1 em { color: var(--accent); font-style: italic; }
   .hero-intro {
     font-size: 18px;
     font-weight: 300;
@@ -195,27 +193,10 @@
     background: #FFBB44;
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(244,166,35,0.35);
+    color: var(--blue-deep);
+    border: none;
   }
   .btn-primary svg { width:16px; height:16px; flex-shrink:0; }
-
-  .btn-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: transparent;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.04em;
-    padding: 13px 26px;
-    text-decoration: none;
-    border: 1px solid rgba(255,255,255,0.25);
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .btn-outline:hover {
-    border-color: var(--white);
-    background: rgba(255,255,255,0.05);
-  }
 
   /* ── STATS STRIP ── */
   .stats-strip {
@@ -337,7 +318,6 @@
     background: var(--blue-bright);
     z-index: 1;
   }
-
   h3 {
     font-family: 'DM Serif Display', serif;
     font-size: 20px;
@@ -345,7 +325,6 @@
     color: var(--blue-mid);
     margin: 40px 0 12px;
   }
-
   p { margin-bottom: 22px; color: var(--text); }
 
   /* ── LINKS ── */
@@ -424,10 +403,7 @@
     overflow: hidden;
     transition: box-shadow 0.2s, border-color 0.2s;
   }
-  .benefit-card:hover {
-    box-shadow: var(--shadow-blue);
-    border-color: var(--blue-bright);
-  }
+  .benefit-card:hover { box-shadow: var(--shadow-blue); border-color: var(--blue-bright); }
   .benefit-card::before {
     content: '';
     position: absolute;
@@ -450,24 +426,11 @@
     margin-bottom: 10px;
     font-weight: 400;
   }
-  .benefit-card p {
-    font-size: 14px;
-    color: var(--text-soft);
-    line-height: 1.65;
-    margin: 0;
-  }
+  .benefit-card p { font-size: 14px; color: var(--text-soft); line-height: 1.65; margin: 0; }
 
   /* ── COMPARISON TABLE ── */
-  .table-wrap {
-    margin: 32px 0;
-    overflow-x: auto;
-    border: 1px solid var(--border);
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 15px;
-  }
+  .table-wrap { margin: 32px 0; overflow-x: auto; border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
   thead tr { background: var(--blue-deep); }
   thead th {
     padding: 14px 20px;
@@ -481,23 +444,13 @@
   thead th:first-child { color: var(--accent); }
   tbody tr:nth-child(even) { background: var(--blue-light); }
   tbody tr:nth-child(odd) { background: var(--white); }
-  tbody td {
-    padding: 13px 20px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text);
-    vertical-align: top;
-  }
+  tbody td { padding: 13px 20px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
   tbody td:first-child { font-weight: 500; color: var(--blue-mid); font-size: 14px; }
   .td-bad { color: #B44444; font-size: 14px; }
   .td-good { color: #2A7A4B; font-size: 14px; font-weight: 500; }
 
   /* ── PROCESS STEPS ── */
-  .process {
-    margin: 32px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
+  .process { margin: 32px 0; display: flex; flex-direction: column; gap: 0; }
   .process-step {
     display: flex;
     gap: 24px;
@@ -517,19 +470,8 @@
     align-items: center;
     justify-content: center;
   }
-  .step-body h4 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 18px;
-    color: var(--blue-deep);
-    font-weight: 400;
-    margin-bottom: 8px;
-  }
-  .step-body p {
-    font-size: 15px;
-    color: var(--text-soft);
-    line-height: 1.7;
-    margin: 0;
-  }
+  .step-body h4 { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--blue-deep); font-weight: 400; margin-bottom: 8px; }
+  .step-body p { font-size: 15px; color: var(--text-soft); line-height: 1.7; margin: 0; }
 
   /* ── PULL QUOTE ── */
   .pull-quote {
@@ -558,97 +500,36 @@
     max-width: 640px;
     margin: 0 auto 16px;
   }
-  .pull-quote cite {
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-style: normal;
-  }
+  .pull-quote cite { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-style: normal; }
 
-  /* ── CTA BLOCK ── */
-  .cta-block {
-    background: var(--white);
-    border: 1px solid var(--border-strong);
-    padding: 48px 40px;
-    margin: 56px 0 32px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .cta-block::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--blue-bright), var(--accent), var(--blue-bright));
-  }
-  .cta-block h3 {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(22px, 3vw, 30px);
-    color: var(--blue-deep);
-    margin: 0 0 14px;
-    font-weight: 400;
-  }
-  .cta-block p {
-    color: var(--text-soft);
-    font-size: 16px;
-    max-width: 500px;
-    margin: 0 auto 28px;
-  }
-  .cta-row {
-    display: flex;
-    gap: 14px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .btn-cta-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--blue-deep);
-    color: var(--white);
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.04em;
-    padding: 15px 30px;
-    text-decoration: none;
+  /* ── AUDIENCE TABS ── */
+  .tab-section { margin: 32px 0; }
+  .tab-nav { display: flex; border-bottom: 2px solid var(--border); gap: 0; }
+  .tab-btn {
+    background: none;
     border: none;
-    transition: background 0.2s, transform 0.15s;
+    padding: 12px 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
   }
-  .btn-cta-primary:hover {
-    background: var(--blue-mid);
-    transform: translateY(-2px);
-    color: var(--white);
-    border: none;
-  }
-  .btn-cta-accent {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--accent);
-    color: var(--blue-deep);
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.04em;
-    padding: 15px 30px;
-    text-decoration: none;
-    border: none;
-    transition: background 0.2s, transform 0.15s;
-  }
-  .btn-cta-accent:hover {
-    background: #FFBB44;
-    transform: translateY(-2px);
-    border: none;
-  }
+  .tab-btn.active { color: var(--blue-deep); border-bottom-color: var(--blue-bright); }
+  .tab-panel { display: none; padding: 28px 0; }
+  .tab-panel.active { display: block; }
+  .audience-card { background: var(--white); border: 1px solid var(--border); padding: 28px 32px; }
+  .audience-card h4 { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--blue-deep); font-weight: 400; margin-bottom: 12px; }
+  .audience-card p { font-size: 15px; color: var(--text-soft); margin-bottom: 16px; }
 
   /* ── FAQ ── */
   .faq { margin: 32px 0; }
-  .faq-item {
-    border: 1px solid var(--border);
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
+  .faq-item { border: 1px solid var(--border); margin-bottom: 10px; overflow: hidden; }
   .faq-q {
     width: 100%;
     background: var(--white);
@@ -689,111 +570,76 @@
     color: var(--text-soft);
     line-height: 1.75;
   }
-  .faq-item.open .faq-a {
-    max-height: 400px;
-    padding: 18px 24px;
-  }
+  .faq-item.open .faq-a { max-height: 400px; padding: 18px 24px; }
 
-  /* ── AUDIENCE TABS ── */
-  .tab-section { margin: 32px 0; }
-  .tab-nav {
-    display: flex;
-    border-bottom: 2px solid var(--border);
-    gap: 0;
-  }
-  .tab-btn {
-    background: none;
-    border: none;
-    padding: 12px 24px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -2px;
-    transition: color 0.2s, border-color 0.2s;
-  }
-  .tab-btn.active {
-    color: var(--blue-deep);
-    border-bottom-color: var(--blue-bright);
-  }
-  .tab-panel { display: none; padding: 28px 0; }
-  .tab-panel.active { display: block; }
-  .audience-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    padding: 28px 32px;
-  }
-  .audience-card h4 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 20px;
-    color: var(--blue-deep);
-    font-weight: 400;
-    margin-bottom: 12px;
-  }
-  .audience-card p { font-size: 15px; color: var(--text-soft); margin-bottom: 16px; }
-
-  /* ── FOOTER ── */
-  footer {
+  /* ── BOTTOM CTA ── */
+  .bottom-cta {
     background: var(--blue-deep);
-    padding: 48px 40px;
+    padding: 80px 40px;
     margin-top: 80px;
-    border-top: 3px solid var(--blue-bright);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
   }
-  .footer-inner {
-    max-width: 820px;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
+  .bottom-cta::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(31,111,235,0.2) 0%, transparent 70%);
   }
-  .footer-brand {
+  .bottom-cta::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(244,166,35,0.08) 0%, transparent 70%);
+  }
+  .bottom-cta-inner { position: relative; z-index: 1; max-width: 620px; margin: 0 auto; }
+  .bottom-cta h2 {
     font-family: 'DM Serif Display', serif;
-    font-size: 22px;
+    font-size: clamp(26px, 4vw, 42px);
+    font-weight: 400;
     color: var(--white);
+    line-height: 1.2;
+    margin: 0 0 16px;
+    padding: 0;
   }
-  .footer-brand span { color: var(--accent); }
-  .footer-desc {
-    font-size: 13px;
-    color: rgba(255,255,255,0.45);
-    margin-top: 8px;
-    max-width: 280px;
-    line-height: 1.6;
+  .bottom-cta h2::before, .bottom-cta h2::after { display: none; }
+  .bottom-cta p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin-bottom: 36px;
   }
-  .footer-links h5 {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 14px;
-  }
-  .footer-links a {
-    display: block;
-    font-size: 13px;
-    color: rgba(255,255,255,0.55);
+  .btn-cta-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: var(--blue-deep);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    padding: 18px 40px;
     text-decoration: none;
     border: none;
-    margin-bottom: 8px;
-    transition: color 0.2s;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
   }
-  .footer-links a:hover { color: var(--white); }
-  .footer-bottom {
-    max-width: 820px;
-    margin: 32px auto 0;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    font-size: 12px;
-    color: rgba(255,255,255,0.3);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
+  .btn-cta-large:hover {
+    background: #FFBB44;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(244,166,35,0.4);
+    color: var(--blue-deep);
+    border: none;
+  }
+  .bottom-cta-note {
+    margin-top: 18px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.04em;
   }
 
   /* ── RESPONSIVE ── */
@@ -806,8 +652,7 @@
     .toc ol { grid-template-columns: 1fr; }
     .benefit-grid { grid-template-columns: 1fr; }
     .pull-quote { margin: 40px -20px; padding: 36px 24px; }
-    .cta-block { padding: 36px 24px; }
-    footer { padding: 40px 20px; }
+    .bottom-cta { padding: 60px 24px; }
   }
 </style>
 </head>
@@ -816,10 +661,8 @@
 <!-- TOP BAR -->
 <header>
   <div class="top-bar">
-    <!-- HOME LINK #1 (only homepage link in the document) -->
-    <a href="https://allstateestimation.com" class="top-bar-brand" style="text-decoration:none;border:none;">All State <span>Estimation</span></a>
+    <a href="https://allstateestimation.com" class="top-bar-brand">All State <span>Estimation</span></a>
     <nav class="top-bar-nav">
-      <!-- SERVICE LINK #1 (only services page link in the document) -->
       <a href="https://allstateestimation.com/bim-estimating-services/">BIM Services</a>
       <a href="https://allstateestimation.com/contact-us/">Contact Us</a>
     </nav>
@@ -830,7 +673,7 @@
 <section class="hero">
   <div class="hero-inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <span>Home</span>
+      <a href="https://allstateestimation.com">Home</a>
       <span class="breadcrumb-sep">›</span>
       <span>Resources</span>
       <span class="breadcrumb-sep">›</span>
@@ -844,7 +687,6 @@
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 1v14M1 8h14"/></svg>
         Get a Free Quote
       </a>
-      <a href="https://allstateestimation.com/contact-us/" class="btn-outline">Contact Us</a>
     </div>
   </div>
 </section>
@@ -905,7 +747,7 @@
     <p>Traditional estimating asks: <em>What do the drawings show?</em> BIM estimating asks: <em>What does the model contain?</em> The model contains every wall, beam, pipe, duct, and finish — with exact dimensions, specifications, and quantities already embedded. The estimator's job becomes analysis and pricing, not manual measuring.</p>
   </div>
 
-  <p>Professional BIM estimating services go a step further — trained estimators combine model-extracted data with up-to-date cost databases, regional labor rates, and trade-specific expertise to produce estimates that are both fast and highly accurate.</p>
+  <p>Professional <a href="https://allstateestimation.com/bim-estimating-services/" target="_blank" rel="noopener">BIM estimating services</a> go a step further — trained estimators combine model-extracted data with up-to-date cost databases, regional labor rates, and trade-specific expertise to produce estimates that are both fast and highly accurate.</p>
 
   <!-- SECTION 2 -->
   <h2 id="how-it-reduces-costs">How BIM Estimating Reduces Construction Costs</h2>
@@ -987,7 +829,7 @@
     <div class="tab-nav">
       <button class="tab-btn active" onclick="switchTab(this,'gc')">General Contractors</button>
       <button class="tab-btn" onclick="switchTab(this,'sub')">Subcontractors</button>
-      <button class="tab-btn" onclick="switchTab(this,'dev')">Developers & Owners</button>
+      <button class="tab-btn" onclick="switchTab(this,'dev')">Developers &amp; Owners</button>
     </div>
     <div class="tab-panel active" id="tab-gc">
       <div class="audience-card">
@@ -1017,7 +859,7 @@
     </div>
     <div class="tab-panel" id="tab-dev">
       <div class="audience-card">
-        <h4>Developers & Owners</h4>
+        <h4>Developers &amp; Owners</h4>
         <p>For developers and building owners, BIM estimating provides something invaluable that traditional estimating cannot: real-time visibility into how design decisions affect project cost. As your design team evolves the building, cost estimates update in parallel, so you are never surprised by a budget overrun at the end of a design phase.</p>
         <p>BIM-based cost data also gives you a stronger position in contractor negotiations, because your estimates are grounded in model-verified quantities rather than rules of thumb. You can also use the model for lifecycle cost planning, facility management, and future renovation estimates long after the project is complete.</p>
         <ul>
@@ -1143,20 +985,6 @@
     </div>
   </div>
 
-  <!-- MID-ARTICLE CTA -->
-  <div class="cta-block">
-    <h3>Ready to Cut Costs on Your Next Project?</h3>
-    <p>Our team at All State Estimation delivers fast, model-accurate BIM estimates for contractors and developers across North America.</p>
-    <div class="cta-row">
-      <a href="https://allstateestimation.com/contact-us/" class="btn-cta-accent" target="_blank" rel="noopener">
-        Get a Free Quote →
-      </a>
-      <a href="https://allstateestimation.com/contact-us/" class="btn-cta-primary" target="_blank" rel="noopener">
-        Contact Us Today
-      </a>
-    </div>
-  </div>
-
   <!-- OUTSOURCING -->
   <h2 id="outsourcing">Why Outsource BIM Estimating to a Professional Provider</h2>
   <p>Not every contracting firm has the internal resources to build or maintain a BIM estimating capability. BIM software licenses are expensive. Trained BIM estimators are in high demand and increasingly difficult to recruit. And the volume of work coming through any one office fluctuates, making it hard to justify a full-time hire during slower bidding periods.</p>
@@ -1172,7 +1000,7 @@
     <li>Faster turnaround times than an overstretched in-house team</li>
   </ul>
 
-  <p>All State Estimation provides professional BIM estimating services for general contractors, subcontractors, and developers across a wide range of project types — from commercial interiors and healthcare facilities to large-scale residential and infrastructure projects. Our team combines BIM model expertise with deep trade knowledge and current market pricing to deliver estimates you can bid with confidence.</p>
+  <p><a href="https://allstateestimation.com" target="_blank" rel="noopener">All State Estimation</a> provides professional <a href="https://allstateestimation.com/bim-estimating-services/" target="_blank" rel="noopener">BIM estimating services</a> for general contractors, subcontractors, and developers across a wide range of project types — from commercial interiors and healthcare facilities to large-scale residential and infrastructure projects. Our team combines BIM model expertise with deep trade knowledge and current market pricing to deliver estimates you can bid with confidence.</p>
 
   <div class="callout">
     <span class="callout-label">What to Look for in a BIM Estimating Provider</span>
@@ -1184,7 +1012,6 @@
   <p>Below are answers to the questions we hear most often from contractors, subcontractors, and developers who are exploring BIM estimating for the first time.</p>
 
   <div class="faq">
-
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         How much does BIM estimating cost compared to traditional estimating?
@@ -1194,7 +1021,6 @@
         BIM estimating typically has a higher upfront cost than basic manual estimating because it requires specialized software and trained professionals. However, the total cost — when you factor in reduced change orders, lower contingency, faster bid preparation, and fewer rework expenses — is consistently lower over the life of the project. Most clients find that BIM estimating pays for itself on the first project where a clash or quantity error is caught early.
       </div>
     </div>
-
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         Do I need to provide a BIM model, or can you work from drawings?
@@ -1204,7 +1030,6 @@
         Professional BIM estimating services work best when a model is already available — typically a Revit, ArchiCAD, or IFC file provided by the design team. However, if you only have 2D drawings, experienced estimating providers can still perform digital quantity takeoffs and incorporate BIM coordination techniques where model data is available for specific trades. We recommend discussing your specific project documentation with the estimating team before engagement.
       </div>
     </div>
-
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         Is BIM estimating only for large commercial projects?
@@ -1214,7 +1039,6 @@
         No. While BIM estimating is most commonly associated with large commercial, healthcare, and infrastructure projects, it delivers measurable value on mid-sized residential, mixed-use, and renovation projects as well. The key is that a BIM model needs to exist or be created for the project. As BIM adoption grows among architects and designers across all project sizes, BIM estimating is becoming accessible and cost-effective for smaller scopes too.
       </div>
     </div>
-
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         How quickly can a BIM estimate be turned around?
@@ -1224,7 +1048,6 @@
         Turnaround time depends on project size and complexity. Smaller commercial projects or individual trade scopes can often be estimated within two to four business days. Larger, multi-trade projects may require one to two weeks for a comprehensive estimate. Outsourcing to a provider with a dedicated team — like All State Estimation — typically produces faster results than an in-house estimator working alongside other responsibilities.
       </div>
     </div>
-
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         What trades can be covered by BIM estimating services?
@@ -1234,7 +1057,6 @@
         BIM estimating can cover virtually all construction trades, including: general construction and civil works, structural steel and concrete, mechanical, electrical, and plumbing (MEP), HVAC and fire suppression, architectural finishes and interiors, site development and earthworks, and specialty systems. A full-service BIM estimating provider will have trade-specific expertise across these disciplines rather than offering only a single-trade focus.
       </div>
     </div>
-
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         Can BIM estimating help with value engineering?
@@ -1244,52 +1066,25 @@
         Yes — this is one of the most powerful and underused applications of BIM estimating. Because cost data is linked directly to model elements, it is straightforward to compare the cost impact of design alternatives. Want to know if switching from cast-in-place concrete to precast panels saves money at your project scale? A BIM-linked estimate can answer that question quickly and accurately, giving your team the data to make informed value engineering decisions without lengthy re-estimates.
       </div>
     </div>
-
   </div>
 
-  <!-- FINAL CTA -->
-  <div class="cta-block" style="margin-top:72px;">
-    <h3>Start Reducing Your Construction Costs Today</h3>
-    <p>Connect with All State Estimation and get a free consultation on how BIM estimating can work for your next project.</p>
-    <div class="cta-row">
-      <a href="https://allstateestimation.com/contact-us/" class="btn-cta-accent" target="_blank" rel="noopener">
-        Get a Free Consultation →
-      </a>
-      <a href="https://allstateestimation.com/contact-us/" class="btn-cta-primary" target="_blank" rel="noopener">
-        Contact Us Today
-      </a>
-    </div>
-  </div>
-
-</div>
+</div><!-- /.content-wrap -->
 </main>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">All State <span>Estimation</span></div>
-      <div class="footer-desc">Professional construction estimating services for contractors, subcontractors, and developers across North America.</div>
-    </div>
-    <div class="footer-links">
-      <h5>Services</h5>
-      <a href="https://allstateestimation.com/bim-estimating-services/">BIM Estimating Services</a>
-      <a href="https://allstateestimation.com/contact-us/">Get a Quote</a>
-    </div>
-    <div class="footer-links">
-      <h5>Company</h5>
-      <a href="https://allstateestimation.com">All State Estimation</a>
-      <a href="https://allstateestimation.com/contact-us/">Contact Us</a>
-    </div>
+<!-- BOTTOM CTA -->
+<section class="bottom-cta">
+  <div class="bottom-cta-inner">
+    <h2>Start Reducing Your Construction Costs Today</h2>
+    <p>Get a free consultation from All State Estimation and see how BIM-powered estimating can protect your margins, cut waste, and keep your next project on budget from day one.</p>
+    <a href="https://allstateestimation.com/contact-us/" class="btn-cta-large" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 1v16M1 9h16"/></svg>
+      Get a Free Quote
+    </a>
+    <p class="bottom-cta-note">No commitment required — we'll respond within one business day.</p>
   </div>
-  <div class="footer-bottom">
-    <span>© 2025 All State Estimation. All rights reserved.</span>
-    <span>Professional BIM Estimating Services</span>
-  </div>
-</footer>
+</section>
 
 <script>
-  // FAQ accordion
   function toggleFaq(btn) {
     const item = btn.parentElement;
     const isOpen = item.classList.contains('open');
@@ -1298,7 +1093,6 @@
     btn.setAttribute('aria-expanded', !isOpen);
   }
 
-  // Audience tabs
   function switchTab(btn, id) {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
